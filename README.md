@@ -5,7 +5,7 @@ The script uses Selenium lib, along with the chromedriver.exe (to be downloaded 
 I run it from Visual Studio Code on Windows, but it can be adapted to run on linux too. Due to the "slow" page web page loading, it can be slow. In general, count around 10-20 seconds per NFT, but it can be ran and forgotten (in the background), once started, the script works on its own. 
 
 ## CONFIG (mandatory)
-- `#F00`
+- #F00
 - `#F00A`
 - `#FF0000`
 - `#FF0000AA`
