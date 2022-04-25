@@ -33,6 +33,12 @@ no debug
 
 
 ## XPATHs
-* **COLLECTION_PAGE_GRID_BTN_XPATH**: This is the XPATH to the "Small Display" button, on the main collection page ![COLLECTION_PAGE_GRID_BTN_XPATH](readme_screenshots/grid_btn_xpath.PNG)
+* **COLLECTION_PAGE_GRID_BTN_XPATH**: This is the XPATH to the "Small Display" button, on the main collection page !
 
-* **OWNER_XPATH, NFT_NAME_XPATH, NFT_IMG_XPATH**: These XPATHs are from the page on a single NFT (not the collection's page) ![COLLECTION_PAGE_GRID_BTN_XPATH](readme_screenshots/nft_xpaths2.PNG)
+[COLLECTION_PAGE_GRID_BTN_XPATH](readme_screenshots/grid_btn_xpath.PNG)
+
+
+
+* **OWNER_XPATH, NFT_NAME_XPATH, NFT_IMG_XPATH**: These XPATHs are from the page on a single NFT (not the collection's page) !
+
+[COLLECTION_PAGE_GRID_BTN_XPATH](readme_screenshots/nft_xpaths2.PNG)
