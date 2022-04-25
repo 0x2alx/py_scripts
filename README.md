@@ -5,7 +5,15 @@ The script uses Selenium lib, along with the chromedriver.exe (to be downloaded 
 I run it from Visual Studio Code on Windows, but it can be adapted to run on linux too. Due to the "slow" page web page loading, it can be slow. In general, count around 10-20 seconds per NFT, but it can be ran and forgotten (in the background), once started, the script works on its own. 
 
 ## CONFIG (mandatory)
-`#F00`
+- `#F00`
+- `#F00A`
+- `#FF0000`
+- `#FF0000AA`
+- `RGB(0,255,0)`
+- `RGB(0%,100%,0%)`
+- `RGBA(0,255,0,0.3)`
+- `HSL(540,70%,50%)`
+- `HSLA(540,70%,50%,0.3)`
 * COLLECTION_URL --> The OpenSea URL to the collection page. Make sure to sort it in ascending order
 * CURRENT_COLLECTION_SIZE --> Number of NFTs currently in the collection (not the final/max collection size)
 
