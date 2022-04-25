@@ -8,11 +8,14 @@ import time, sys, json, shutil, requests, os, csv
 # UPDATE THESE VARIABLES FOR YOUR NEEDS/COLLECTION
 # URL of the main collection page, make sure they are sorted by CREATED_DATE (ascending) to get them in order
 COLLECTION_URL = "https://opensea.io/collection/newman-nfts?search[sortAscending]=true&search[sortBy]=CREATED_DATE"
-NFT_URL_LIST_FILE = "./urls.txt"  # text file with line by line ordered list of OS urls for each NFT in the collection
-SNAPSHOT_FILE = "./snapshot.txt"  # json dump with dict for each NFT in the collection
-CSV_OWNER_FILE = "./owners.csv"
-CSV_NFT_URLS = "./nfts_urls.csv"
-IMGS_DIR = "./imgs/"
+SNAPSHOT_DIR = "./snapshot"  # base directory where all output files will be
+NFT_URL_LIST_FILE = f"{SNAPSHOT_DIR}/urls.txt"  # text file with line by line ordered list of OS urls for each NFT in the collection
+SNAPSHOT_FILE = (
+    f"{SNAPSHOT_DIR}/snapshot.txt"  # json dump with dict for each NFT in the collection
+)
+CSV_OWNER_FILE = f"{SNAPSHOT_DIR}/owners.csv"
+CSV_NFT_URLS = f"{SNAPSHOT_DIR}/nfts_urls.csv"
+IMGS_DIR = f"{SNAPSHOT_DIR}/imgs/"
 CURRENT_COLLECTION_SIZE = 200  # needed for the loop, please be accurate
 DEBUGG = False
 
@@ -22,7 +25,8 @@ OWNER_XPATH = (
 )
 NFT_NAME_XPATH = "//*[@id='main']/div/div/div/div[1]/div/div[1]/div[2]/section[1]/h1"
 NFT_IMG_XPATH = (
-    "//*[@id='main']/div/div/div/div[1]/div/div[1]/div[1]/article/div/div/div/div/img"
+    # "//*[@id='main']/div/div/div/div[1]/div/div[1]/div[1]/article/div/div/div/div/img"
+    "//*[@id='main']/div/div/div/div[1]/div/div[1]/div[1]/article/div/div/div/img"
 )
 COLLECTION_PAGE_GRID_BTN_XPATH = "/html/body/div[1]/div/main/div/div/div[3]/div/div/div/div[3]/div[1]/div[2]/div[4]/div/button[2]"
 
@@ -33,15 +37,20 @@ COPY_ADDRESS_BUTTON_XPATH = (
 
 def main():
     global CURRENT_COLLECTION_SIZE, DEBUGG
+
+    # create snapshot directory
+    if not os.path.isdir(SNAPSHOT_DIR):
+        os.mkdir(SNAPSHOT_DIR)
+
     if "debug" in sys.argv or DEBUGG:
         CURRENT_COLLECTION_SIZE = 50
     if "coll" in sys.argv:
         get_nft_urls_from_collection()
-    elif "nft" in sys.argv:
+    if "nft" in sys.argv:
         get_nfts_info()
-    elif "csv" in sys.argv:
+    if "csv" in sys.argv:
         compile_csv()
-    elif "imgs" in sys.argv:
+    if "imgs" in sys.argv:
         print(os.path.isdir(IMGS_DIR))
         if not os.path.isdir(IMGS_DIR):
             os.mkdir(IMGS_DIR)
@@ -76,7 +85,7 @@ def get_nft_urls_from_collection():
                     href = e.get_attribute("href")
                     print(e)
                     print(href)
-                    if href not in NFT_URL_LIST:
+                    if href not in NFT_URL_LIST and href != None:
                         NFT_URL_LIST.append(href)
                     # print(NFT_URL_LIST)
                 except:
