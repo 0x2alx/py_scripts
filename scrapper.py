@@ -7,7 +7,7 @@ import time, sys, json, shutil, requests, os, csv
 
 # UPDATE THESE VARIABLES FOR YOUR NEEDS/COLLECTION
 # URL of the main collection page, make sure they are sorted by CREATED_DATE (ascending) to get them in order
-COLLECTION_URL = "https://opensea.io/collection/newman-nfts?search[sortAscending]=true&search[sortBy]=CREATED_DATE"
+COLLECTION_URL = ""
 SNAPSHOT_DIR = "./snapshot"  # base directory where all output files will be
 NFT_URL_LIST_FILE = f"{SNAPSHOT_DIR}/urls.txt"  # text file with line by line ordered list of OS urls for each NFT in the collection
 SNAPSHOT_FILE = (
@@ -16,7 +16,7 @@ SNAPSHOT_FILE = (
 CSV_OWNER_FILE = f"{SNAPSHOT_DIR}/owners.csv"
 CSV_NFT_URLS = f"{SNAPSHOT_DIR}/nfts_urls.csv"
 IMGS_DIR = f"{SNAPSHOT_DIR}/imgs/"
-CURRENT_COLLECTION_SIZE = 200  # needed for the loop, please be accurate
+CURRENT_COLLECTION_SIZE = 0  # needed for the loop, please be accurate
 DEBUGG = False
 
 # XPATHS (might require update)
