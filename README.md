@@ -6,10 +6,8 @@ I run it from Visual Studio Code on Windows, but it can be adapted to run on lin
 
 ## CONFIG (mandatory)
 ```diff
-+* COLLECTION_URL
+* COLLECTION_URL >>> The OpenSea URL to the collection page. Make sure to sort it in ascending order
 ```
-
-    The OpenSea URL to the collection page. Make sure to sort it in ascending order
 * CURRENT_COLLECTION_SIZE --> Number of NFTs currently in the collection (not the final/max collection size)
 ### Optional config changes
 The variables do not necessarily need any modifications, the default values can be used.
