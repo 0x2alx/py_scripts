@@ -1,4 +1,3 @@
 # py_scripts
-collection of python scripts
-
-https://twitter.com/ghooost0x2a
+Collection of Python scripts
+By: https://twitter.com/ghooost0x2a
