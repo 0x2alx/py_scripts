@@ -24,11 +24,15 @@ It is possible OpenSea changes their UI layout/structure in the future. If that 
 ***debug*** option can be used in conjunction with any other function. You need to use the functions in the order provided above (they depend on previous function outputs). An easier way is also to run everything in one command. E.g.
 
 debug
-`python scrapper.py debug coll nft csv imgs`
+
+`$python scrapper.py debug coll nft csv imgs`
 
 no debug
-`python scrapper.py coll nft csv imgs`
+
+`$python scrapper.py coll nft csv imgs`
 
 
 ## XPATHs
 * **COLLECTION_PAGE_GRID_BTN_XPATH**: This is the XPATH to the "Small Display" button, on the main collection page ![COLLECTION_PAGE_GRID_BTN_XPATH](readme_screenshots/grid_btn_xpath.PNG)
+
+* **OWNER_XPATH, NFT_NAME_XPATH, NFT_IMG_XPATH**: These XPATHs are from the page on a single NFT (not the collection's page) ![COLLECTION_PAGE_GRID_BTN_XPATH](readme_screenshots/nft_xpaths2.PNG)
