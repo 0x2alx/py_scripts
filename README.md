@@ -35,10 +35,27 @@ no debug
 ## XPATHs
 * **COLLECTION_PAGE_GRID_BTN_XPATH**: This is the XPATH to the "Small Display" button, on the main collection page 
 
-![COLLECTION_PAGE_GRID_BTN_XPATH](readme_screenshots/grid_btn_xpath.PNG)
+![COLLECTION_PAGE_GRID_BTN_XPATH](readme_screenshots/collection_grid_btn2.PNG)
 
 
 
 * **OWNER_XPATH, NFT_NAME_XPATH, NFT_IMG_XPATH**: These XPATHs are from the page on a single NFT (not the collection's page)
 
-![COLLECTION_PAGE_GRID_BTN_XPATH](readme_screenshots/nft_xpaths2.PNG)
+![OWNER_XPATH](readme_screenshots/nft_xpaths2.PNG)
+
+
+* **COPY_ADDRESS_BUTTON_XPATH**: This is the XPATH to the COPY address button/link, on a OWNER's/USER's account (not on the collection or the nft page)
+
+![COPY_ADDRESS_BUTTON_XPATH](readme_screenshots/owner_account_os2.PNG)
+
+
+## Artifacts Produced
+![output1](readme_screenshots/snapshot_folder_output.PNG)
+![output2](readme_screenshots/urls_txt_out.PNG)
+![output2](readme_screenshots/snapshot_json_out.PNG)
+![output2](readme_screenshots/nft_urls_csv_out.PNG)
+![output2](readme_screenshots/owners_snapshot_out.PNG)
+
+## DEMO
+See OS_scrapper_demo_x10.mp4 for demo
+
