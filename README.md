@@ -114,8 +114,13 @@ To get a local copy up and running follow these simple example steps.
 <!-- CHANGES -->
 ## Changes
 
-Distributed under the MIT License. See `LICENSE` for more information.
+##### opensea_api.py
+  * Added function requests_retry_session, to handle network errors
+  * Modified get_opensea_recent_events. Updated the OS request URL parameters/format. Added HEADERS for OS API KEY
 
+##### tweet_opensea_recent_sale_bot.py
+  * Re-wrote pretty much all the code. For one, it would use the NFT id to compare latest and past event, which can lead to the bot missing events. Re-wrote it to compare the event IDs, instead of the NFT IDs. 
+  * The bot was also ONLY considering the LATEST event instead of ALL the event between last tweet and the latest event fetched, which was corrected. 
 
 <!-- LICENSE -->
 ## License

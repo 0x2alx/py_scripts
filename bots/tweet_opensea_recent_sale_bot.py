@@ -44,7 +44,8 @@ def check_recent_sales(api, event_id):
         logger.info(f"New event: {ev_id}")
         msg = construct_message(v)
         logger.info(f"Constructed TWEET: {msg}")
-        # api.update_status(status=msg)
+        time.sleep(1)  # not to annoy twitter API too much
+        api.update_status(status=msg)
 
     return new_event_id
 
