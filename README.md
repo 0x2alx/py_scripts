@@ -1,20 +1,7 @@
 # tweepy-opensea-sales-bot
  
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
 <!-- PROJECT SHIELDS -->
 <!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Contributors][contributors-shield]][contributors-url]
@@ -33,19 +20,21 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>-->
 
-  <h3 align="center">Tweet Opensea Sale Bot</h3>
+  <h3 align="center">OpenSea Tweet BOT</h3>
 
   <p align="center">
     Simple Tweepy bot that tweets out the most recent sale on OpenSea for a specific collection
     <br />
-    <a href="https://github.com/ncvanegmond/tweet_opensea_sale_bot"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ghooost0x2a/py_scripts/tree/opensea_tweet_bot"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://twitter.com/CryptoTargetBot">View Demo</a>
+    <a href="https://github.com/ncvanegmond/tweet_opensea_sale_bot">OG Code</a>
     ·
-    <a href="https://github.com/ncvanegmond/tweet_opensea_sale_bot/issues">Report Bug</a>
+    <a href="https://twitter.com/avril15sales">View Demo</a>
     ·
-    <a href="https://github.com/ncvanegmond/tweet_opensea_sale_bot/issues">Request Feature</a>
+    <a href="https://github.com/ghooost0x2a/py_scripts/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ghooost0x2a/py_scripts/issues">Request Feature</a>
   </p>
 </p>
 
@@ -84,7 +73,9 @@
 
 Simple tweepy bot that will periodically call the Opensea API to check if there are new sales for a specific collection and tweets about it.
 
-You can see it in action at [@CryptoTargetBot](https://twitter.com/CryptoTargetBot)
+Requires OpenSea API KEY. 
+
+You can see it in action at [@avril15sales](https://twitter.com/avril15sales)
 
 ### Built With
 
@@ -104,8 +95,11 @@ To get a local copy up and running follow these simple example steps.
 1. Read the docs on the [Opensea API](https://docs.opensea.io/reference/api-overview)
 2. Clone the repo
    ```sh
-   git clone https://github.com/ncvanegmond/tweet_opensea_sale_bot.git
+   git clone https://github.com/ghooost0x2a/py_scripts.git
    ```
+   ```sh
+   git checkout opensea_tweet_bot
+   ```   
 3. Install packages
    ```sh
    pip install -r requirements.txt
@@ -118,41 +112,10 @@ To get a local copy up and running follow these simple example steps.
    ACCESS_TOKEN = xxx
    ACCESS_TOKEN_SECRET = xxx
    # OpenSea collection parameters
-   COLLECTION_SLUG = marscatsvoyage
-   CONTRACT_ADDRESS = 0xdd467a6c8ae2b39825a452e06b4fa82f73d4253d
-   OPENSEA_SHARED_STOREFRONT_ADDRESS = 0x495f947276749Ce646f68AC8c248420045cb7b5e
+   COLLECTION_SLUG = avril15s01
+   CONTRACT_ADDRESS = 0xf94c7c60732979e8e24c75883fc8df66158c5fed
+   OS_API_KEY = xxx
    ```
-
-
-
-<!-- USAGE EXAMPLES -->
-<!--## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_-->
-
-
-
-<!-- ROADMAP -->
-<!--## Roadmap
-
-See the [open issues](https://github.com/ncvanegmond/tweet_opensea_sale_bot/issues) for a list of proposed features (and known issues).-->
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
 
 <!-- LICENSE -->
 ## License
@@ -164,16 +127,16 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Niels van Egmond - [@ncvanegmond](https://twitter.com/ncvanegmond)
+Alex - [@ghooost0x2a](https://twitter.com/ghooost0x2a)
 
-Project Link: [https://github.com/ncvanegmond/tweet_opensea_sale_bot](https://github.com/ncvanegmond/tweet_opensea_sale_bot)
+Project Link: [https://github.com/ghooost0x2a/py_scripts/tree/opensea_tweet_bot](https://github.com/ghooost0x2a/py_scripts/tree/opensea_tweet_bot)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Miguel Garcia's 'How to make a Twitter bot in Python with Tweepy'](https://realpython.com/twitter-bot-python-tweepy/#creating-twitter-api-authentication-credentials)
-* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+* [Niels van Egmond for the orignal code](https://github.com/ncvanegmond/tweet_opensea_sale_bot)
+
 
 
 
