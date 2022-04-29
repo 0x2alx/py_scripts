@@ -54,7 +54,10 @@ def main():
     api = create_api()
     event_id = 42
     while True:
-        event_id = check_recent_sales(api, event_id)
+        try:
+            event_id = check_recent_sales(api, event_id)
+        except:
+            logger.info("Exception")
         logger.info("Waiting...")
         time.sleep(60)
 
