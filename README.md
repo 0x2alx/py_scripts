@@ -113,7 +113,7 @@ To get a local copy up and running follow these simple example steps.
    CONTRACT_ADDRESS = 0xf94c7c60732979e8e24c75883fc8df66158c5fed
    OS_API_KEY = xxx
    ```
-<!-- LICENSE -->
+<!-- CHANGES -->
 ## Changes from OG code
 
 Distributed under the MIT License. See `LICENSE` for more information.
