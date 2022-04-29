@@ -5,9 +5,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 <!--[![LinkedIn][linkedin-shield]][linkedin-url]-->
 
@@ -143,8 +140,8 @@ Project Link: [https://github.com/ghooost0x2a/py_scripts/tree/opensea_tweet_bot]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/ncvanegmond/tweet_opensea_sale_bot.svg?style=for-the-badge
-[contributors-url]: https://github.com/ncvanegmond/tweet_opensea_sale_bot/graphs/contributors
+[contributors-shield]: https://github.com/ghooost0x2a
+[contributors-url]: https://github.com/ghooost0x2a
 [forks-shield]: https://img.shields.io/github/forks/ncvanegmond/tweet_opensea_sale_bot.svg?style=for-the-badge
 [forks-url]: https://github.com/ncvanegmond/tweet_opensea_sale_bot/network/members
 [stars-shield]: https://img.shields.io/github/stars/ncvanegmond/tweet_opensea_sale_bot.svg?style=for-the-badge
