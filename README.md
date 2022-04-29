@@ -1,4 +1,4 @@
-# tweepy-opensea-sales-bot
+# opensea_tweet_bot
  
 <!-- PROJECT SHIELDS -->
 <!--
