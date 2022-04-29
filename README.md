@@ -54,8 +54,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <!--<li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>-->
     <li><a href="#changes">Changes from OG code</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -114,7 +112,7 @@ To get a local copy up and running follow these simple example steps.
    OS_API_KEY = xxx
    ```
 <!-- CHANGES -->
-## Changes from OG code
+## Changes
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
