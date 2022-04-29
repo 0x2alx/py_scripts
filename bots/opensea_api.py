@@ -96,7 +96,7 @@ def construct_message(item):
     message = (
         f"{message_params['buyer_name']} has bought {message_params['asset_name']} "
         f"from {message_params['seller_name']} for $ETH {message_params['eth_price']:.2f} "
-        f"(USD {message_params['usd_price']:.2f}) \n #{message_params['asset_symbol']}"
+        f"(USD {message_params['usd_price']:.2f}) \n"
         f"#avril15"
         f" \n \n "
         f"{message_params['permalink']}"

@@ -6,6 +6,7 @@ import logging
 from config import create_api
 from opensea_api import get_opensea_recent_events, construct_message, write_out
 import time
+import traceback
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger()
@@ -15,6 +16,7 @@ def check_recent_sales(api, event_id):
     logger.info("Calling OpenSea")
     dct = get_opensea_recent_events().get("asset_events")
     logger.info("OS request returned " + str(len(dct)) + " events")
+    logger.info("EVENTS RETURNED " + str(dct) + " events")
     if len(dct) == 0:
         return event_id
 
@@ -35,9 +37,9 @@ def check_recent_sales(api, event_id):
     elif new_event_id == 69 and event_id == 42:
         return event_id
 
-    permalink = dct.get("asset").get("permalink")
-    logger.info(f"PERMALINK: {permalink}")
     for k, v in enumerate(dct):
+        permalink = v.get("asset").get("permalink")
+        logger.info(f"PERMALINK: {permalink}")
         ev_id = v["id"]
         if int(v["id"]) <= event_id:
             break
@@ -45,19 +47,22 @@ def check_recent_sales(api, event_id):
         msg = construct_message(v)
         logger.info(f"Constructed TWEET: {msg}")
         time.sleep(1)  # not to annoy twitter API too much
+        logger.info(msg)
         api.update_status(status=msg)
+        logger.info("TWEET SENT!!!!!!!!!!!!!")
 
     return new_event_id
 
 
 def main():
     api = create_api()
-    event_id = 42
+    event_id = 5540887400
     while True:
         try:
             event_id = check_recent_sales(api, event_id)
         except:
             logger.info("Exception")
+            traceback.print_exc()
         logger.info("Waiting...")
         time.sleep(60)
 
