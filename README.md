@@ -56,7 +56,7 @@
     </li>
     <!--<li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>-->
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#changes">Changes from OG code</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -68,7 +68,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Simple tweepy bot that will periodically call the Opensea API to check if there are new sales for a specific collection and tweets about it.
+Simple tweepy bot that will periodically call the Opensea API to check if there are new sales for a specific collection and tweets about it. This bot is based on the code here: https://github.com/ncvanegmond/tweet_opensea_sale_bot
 
 Requires OpenSea API KEY. 
 
@@ -113,6 +113,11 @@ To get a local copy up and running follow these simple example steps.
    CONTRACT_ADDRESS = 0xf94c7c60732979e8e24c75883fc8df66158c5fed
    OS_API_KEY = xxx
    ```
+<!-- LICENSE -->
+## Changes from OG code
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
 
 <!-- LICENSE -->
 ## License
