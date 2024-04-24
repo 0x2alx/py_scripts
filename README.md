@@ -58,5 +58,4 @@ no debug
 
 ## DEMO
 See OS_scrapper_demo_x10.mp4 for demo
-https://twitter.com/alexzzzzz42/status/1518678426403500034?s=20&t=j_bjZydE3ufOoPPRlt8QNQ
 
